@@ -1,0 +1,434 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8f9fb;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* GLOBAL */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER */
+.header {
+  background: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(135deg, #0759f2, #9333ea);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(108, 43, 217, 0.3);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* HERO */
+.hero {
+  background: #ffffff;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 420px;
+}
+
+/* FEATURES */
+.features {
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #6b7280;
+}
+
+/* SHOWCASE */
+.showcase {
+  background: #ffffff;
+}
+
+.showcase-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.showcase-text {
+  flex: 1;
+}
+
+.showcase-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.showcase-text p {
+  color: #6b7280;
+}
+
+.showcase-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* BENEFITS */
+.benefits {
+  background: linear-gradient(135deg, #6c2bd9, #044fe5);
+  color: #ffffff;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.benefit-grid div {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* PRICING */
+.pricing {
+  background: #f8f9fb;
+}
+
+.pricing-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* CARD */
+.plan-card {
+  flex: 1;
+  background: linear-gradient(135deg, #055ce9, #9333ea);
+  color: #fff;
+  padding: 50px 40px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(108, 43, 217, 0.25);
+}
+
+.plan-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.plan-card .price {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.plan-card .price span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.plan-card .trial {
+  margin-bottom: 25px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.plan-card ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.plan-card small {
+  display: block;
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: 25px;
+  background: #22c55e;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* DESCRIÇÃO */
+.pricing-description {
+  flex: 1;
+}
+
+.pricing-description h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.pricing-description p {
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.pricing-description ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.pricing-description ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .pricing-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .plan-card,
+  .pricing-description {
+    width: 100%;
+  }
+}
+
+/* PLANO DESTACADO */
+.highlight {
+  background: linear-gradient(135deg, #0454f4, #9333ea);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.highlight .price {
+  color: #ffffff;
+}
+
+.highlight ul li {
+  color: #f3f4f6;
+}
+
+.highlight small {
+  color: #e5e7eb;
+}
+
+/* CTA */
+.cta {
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+.footer {
+  background: #111827;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .hero-content,
+  .showcase-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .cards,
+  .plans,
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+  .highlight {
+    transform: scale(1);
+  }
+}
+
+/* ANIMAÇÃO SUAVE */
+.card,
+.plan-card,
+.pricing-description,
+.benefit-grid div {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* EFEITO LOADING */
+.btn-primary.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
